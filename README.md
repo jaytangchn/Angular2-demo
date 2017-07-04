@@ -1,3 +1,13 @@
+# 我的Angular2 学习记录
+## 准备安装
+* 安装npm node 略过 [中文官网](http://nodejs.cn/download/);
+* 安装cnpm , cnpm 为npm的中国镜像,速度更快. `npm install -g cnpm --registry=https://registry.npm.taobao.org`
+* 安装Angular-cli , 这里使用命令 `cnpm install -g @angular/cli `
+* 如果有之前有安装,需要卸载后再试! `npm uninstall -g angular-cli` 和 `npm cache clean`
+## 创建项目
+1. `ng new my-app --skip-install`
+2. `cd my-app`
+3. `cnpm install`
 # Demo2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
