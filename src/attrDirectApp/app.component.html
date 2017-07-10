@@ -1,6 +1,4 @@
 <h1>My First Attribute Directive</h1>
-<h1>My First Attribute Directive</h1>
-
 <h4>Pick a highlight color</h4>
 <div>
   <input type="radio" name="colors" (click)="color='lightgreen'">Green
@@ -8,4 +6,16 @@
   <input type="radio" name="colors" (click)="color='cyan'">Cyan
 </div>
 <p [myHighlight]="color" defaultColor="violet">Highlight me!</p>
-
+<!--event 事件-->
+<h1>event 事件</h1>
+<input (keyup)="onKey($event)"/>
+<p>{{values}}</p>
+<h1>从一个模板引用变量中获得用户输入</h1>
+<input #box (keyup)="5" />
+<p>{{box.value}}</p>
+<h1>按键事件过滤</h1>
+<input #box2 (keyup.enter) = "onEnter(box2.value)" />
+<p>{{value2}}</p>
+<h1>失去焦点事件</h1>
+<input #box3 (keyup.enter) = 'update(box3.value)' (blur)="update(box3.value)" />
+<p>{{value3}}</p>
